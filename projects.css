@@ -26,13 +26,16 @@ nav a {
     font-weight: 600;
     transition: color 0.3s;
 }
+nav a:visited {
+    color: #a0cfff;
+}
 nav a:hover {
     color: #ffffff;
 }
 main {
     padding: 2rem;
     max-width: 800px;
-    margin: 2rem auto; /* Added a top/bottom margin for better spacing */
+    margin: auto;
     background: #1e1e1e;
     border-radius: 8px;
     box-shadow: 0 0 12px rgba(0,0,0,0.4);
@@ -44,27 +47,13 @@ footer {
     color: #999;
     font-size: 0.9rem;
 }
-/* --- Styles moved from HTML file --- */
-.welcome-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px; /* Adds space between the picture and the text */
+
+a {
+    color: #81bfff;
 }
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%; /* Makes the image circular */
-    object-fit: cover; /* Prevents the image from stretching */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+.project-links a:visited {
+    color: #c6a6ff;
 }
-.welcome-text {
-    max-width: 500px;
-}
-/* Makes the layout stack vertically on smaller screens */
-@media (max-width: 600px) {
-    .welcome-container {
-        flex-direction: column;
-        text-align: center;
-    }
+a:hover {
+    color: #ffffff;
 }
