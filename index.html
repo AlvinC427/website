@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alvin Cheung - Home</title>
+    <title>Home - Alvin Cheung</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -16,19 +16,180 @@
         <a href="projects.html">Projects</a>
     </nav>
     <main>
-        <section>
-            <div class="welcome-container">
-                <img src="cookie.jpg" alt="A close-up photo of a cat named Cookie" class="profile-pic">
-                <div class="welcome-text">
-                    <h2>Welcome!</h2>
-                    <p>Hey there! I'm Alvin, a CS major at Drexel. I enjoy building, learning, and pushing my creativity through code and design. Explore the site to see some of my work and interests.</p>
-                </div>
+        <div class="main-layout">
+            
+            <div class="primary-content">
+                <section>
+                    <div class="welcome-container">
+                        <img src="cookie.jpg" alt="A close-up photo of a cat named Cookie" class="profile-pic">
+                        <div class="welcome-text">
+                            <h2>Welcome!</h2>
+                            <p>Hey there! I'm Alvin, a CS major at Drexel. I enjoy building, learning, and pushing my 
+                                creativity through code and design. Explore the site to see some of my work and interests.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="about-me-section">
+                    <h2>About Me</h2>
+                    <div class="about-me-content">
+                        <div class="about-column">
+                            <h3>Why Drexel?</h3>
+                            <p>
+                                I chose Drexel for its renowned co-op program, which offers hands-on industry 
+                                experience while still in school. The fast-paced, applied curriculum matched 
+                                the kind of environment I wanted for growing as a developer and thinker.
+                            </p>
+                            <h3>Computing Interests</h3>
+                            <p>
+                                I'm passionate about building smart, full-stack applications with clean design and 
+                                solid functionality. My main interests include machine learning, web development, 
+                                and UI/UX. I enjoy turning abstract ideas into interactive and meaningful tools.
+                            </p>
+                        </div>
+                        <div class="about-column">
+                            <h3>Hobbies & Interests</h3>
+                            <p>
+                                Outside of coding, I enjoy going to the gym, playing ping-pong, watching anime, 
+                                day trading, gaming with friends, and diving into music of all kinds. I like 
+                                staying active both physically and mentally.
+                                <br></br>
+                            </p>
+                            <h3>Academic Standing</h3>
+                            <p>
+                                I'm proud to have made the Dean's List for the past three terms while exploring 
+                                a range of technical topics. Some of my favorite courses so far include Linear 
+                                Algebra, Computer Programming II, and Intro to CS. I'm especially excited to 
+                                take Data Structures soon!
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="favorites-section">
+                    <h2>Some of My Favorites</h2>
+                    <div class="favorites-grid">
+                        <div class="favorite-card">
+                            <h3>🎮 Gaming</h3>
+                            <p><strong>Currently Playing:</strong></p>
+                            <ul>
+                                <li>Leage of Legends</li>
+                                <li>Chess</li>
+                            </ul>
+                            <p><strong>All-Time Favorites:</strong></p>
+                            <ul>
+                                <li>Team Fortress 2</li>
+                                <li>Monster Hunter: World</li>
+                                <li>Counter-Strike: Global Offensive</li>
+                            </ul>
+                        </div>
+                        <div class="favorite-card">
+                            <h3>🎵 Music</h3>
+                            <p><strong>Favorite Genres:</strong></p>
+                            <ul>
+                                <li>J-pop</li>
+                                <li>Chinese Rap</li>
+                            </ul>
+                            <p><strong>Artists I'm Listening To:</strong></p>
+                            <ul>
+                                <li>NINEONE#</li>
+                                <li>Friday Night Plans</li>
+                                <li>She Her Her Hers</li>
+                                <li>sakehands</li>
+                                <li>Monkey Majik</li>
+                            </ul>
+                        </div>
+                        <div class="favorite-card">
+                            <h3>📺 Anime</h3>
+                            <p><strong>Currently Watching:</strong></p>
+                            <ul>
+                                <li>Heavenly Delusions</li>
+                            </ul>
+                            <p><strong>Most Entertaining Watches:</strong></p>
+                            <ul>
+                                <li>JoJo's Bizarre Adventure</li>
+                                <li>Ranking of Kings</li>
+                                <li>Summertime Render</li>
+                                <li>Cyberpunk Edgerunners</li>
+                                <li>Eminence in Shadow</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </section>
+
+            <aside class="sidebar">
+                <div class="sidebar-card">
+                    <h3>Contact & Links</h3>
+                    <p class="contact-info">
+                        <strong>Email:</strong> <a>ac4633@drexel.edu</a>
+                        <br>
+                        <strong>Phone:</strong> <a>215-317-5923</a>
+                        <br>
+                        <strong>Discord:</strong> <a>.alvin</a>
+                    </p>
+                    <a href="https://steamcommunity.com/profiles/76561198193400189/" class="steam-link" target="_blank" rel="noopener noreferrer">
+                        My Steam Profile
+                    </a>
+                </div>
+                <div class="sidebar-card">
+                    <h3>My Anime 3x3</h3>
+                    <img id="anime-3x3-trigger" src="3x3.png" alt="A 3x3 grid to represent my anime taste">
+                </div>
+                <div class="sidebar-card">
+                    <h3>My Playlist (care, may be loud)</h3>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5CQdc30HmLcQghie1PnwK5?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </aside>
+
+        </div>
     </main>
     <footer>
-        &copy; 2025 Alvin Cheung
+        © 2025 Alvin Cheung
     </footer>
-    <script src="scripts/main.js"></script>
+    
+    <div id="image-modal" class="modal">
+        <span class="modal-close-button">x</span>
+        <img class="modal-content" id="modal-image-content">
+    </div>
+
+    <script>
+        // This script will run after the page is fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // Get all the necessary elements from the page
+            const modal = document.getElementById('image-modal');
+            const triggerImage = document.getElementById('anime-3x3-trigger');
+            const modalImage = document.getElementById('modal-image-content');
+            const closeButton = document.querySelector('.modal-close-button');
+
+            // Check if all elements were found before adding event listeners
+            if (modal && triggerImage && modalImage && closeButton) {
+
+                // Create a function to open the modal
+                function openModal() {
+                    modal.style.display = 'block';
+                    modalImage.src = triggerImage.src;
+                }
+
+                // Create a function to close the modal
+                function closeModal() {
+                    modal.style.display = 'none';
+                }
+
+                // Assign the functions to click events
+                triggerImage.addEventListener('click', openModal);
+                closeButton.addEventListener('click', closeModal);
+
+                // Add event to close modal when clicking the background
+                modal.addEventListener('click', function(event) {
+                    if (event.target === modal) {
+                        closeModal();
+                    }
+                });
+            }
+        });
+    </script>
+
 </body>
 </html>

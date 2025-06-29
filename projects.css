@@ -48,6 +48,14 @@ footer {
     font-size: 0.9rem;
 }
 
+.project-divider {
+    border: none;
+    height: 2px;
+    background-color: #607D8B; /* Change this color to whatever you like */
+    margin: 40px 0;
+    border-radius: 8px;
+}
+
 a {
     color: #81bfff;
 }
