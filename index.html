@@ -1,29 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Setting up meta tags and linking external stylesheet -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Alvin Cheung</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <!-- Site Header -->
     <header>
         <h1>Alvin Cheung</h1>
         <p>Computer Science @ Drexel | Math Minor | Tech & Creativity Enthusiast</p>
     </header>
-    <!-- Simple nav -->
     <nav>
         <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
     </nav>
-
     <main>
         <div class="main-layout">
             <div class="primary-content">
-        
-                <!-- Welcome Section -->
                 <section>
                     <div class="welcome-container">
                         <img src="cookie.jpg" alt="A close-up photo of a cat named Cookie" class="profile-pic">
@@ -35,11 +29,9 @@
                     </div>
                 </section>
 
-                <!-- About Me Section -->
                 <section class="about-me-section">
                     <h2>About Me</h2>
                     <div class="about-me-content">
-                        <!-- 1st Column -->
                         <div class="about-column">
                             <h3>Why Drexel?</h3>
                             <p>
@@ -55,7 +47,6 @@
                                 solve real problems.
                             </p>
                         </div>
-                        <!-- 2nd Column -->
                         <div class="about-column">
                             <h3>Hobbies & Interests</h3>
                             <p>
@@ -73,11 +64,9 @@
                     </div>
                 </section>
                 
-                <!-- Favorites Section -->
                 <section class="favorites-section">
                     <h2>Some of My Favorites</h2>
                     <div class="favorites-grid">
-                        <!-- Games -->
                         <div class="favorite-card">
                             <h3>🎮 Gaming</h3>
                             <p><strong>Currently Playing:</strong></p>
@@ -92,7 +81,6 @@
                                 <li>Counter-Strike: Global Offensive</li>
                             </ul>
                         </div>
-                        <!-- Music -->
                         <div class="favorite-card">
                             <h3>🎵 Music</h3>
                             <p><strong>Favorite Genres:</strong></p>
@@ -109,7 +97,6 @@
                                 <li>Monkey Majik</li>
                             </ul>
                         </div>
-                        <!-- Anime -->
                         <div class="favorite-card">
                             <h3>📺 Anime</h3>
                             <p><strong>Currently Watching:</strong></p>
@@ -130,9 +117,7 @@
                 </section>
             </div>
 
-            <!-- Sidebar with contact and extras -->
             <aside class="sidebar">
-                <!-- Contacts and links -->
                 <div class="sidebar-card">
                     <h3>Contact & Links</h3>
                     <p class="contact-info">
@@ -142,19 +127,17 @@
                         <br>
                         <strong>Discord:</strong> .alvin
                     </p>
-		    <a href="https://www.linkedin.com/in/alvincheung427" class="linkedin-link" target="_blank" rel="noopener noreferrer">
-			My LinkedIn
-		    </a>
+		            <a href="https://www.linkedin.com/in/alvincheung427" class="linkedin-link" target="_blank" rel="noopener noreferrer">
+			            My LinkedIn
+		            </a>
                     <a href="https://steamcommunity.com/profiles/76561198193400189/" class="steam-link" target="_blank" rel="noopener noreferrer">
                         My Steam Profile
                     </a>
                 </div>
-                <!-- Anime 3x3 -->
                 <div class="sidebar-card">
                     <h3>My Anime 3x3</h3>
                     <img id="anime-3x3-trigger" src="3x3.png" alt="A 3x3 of shows to represent my anime taste">
                 </div>
-                <!-- Embedded Spotify playlist -->
                 <div class="sidebar-card">
                     <h3>My Playlist (care, may be loud)</h3>
                     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5CQdc30HmLcQghie1PnwK5?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
@@ -167,22 +150,18 @@
         © 2025 Alvin Cheung
     </footer>
     
-    <!-- Modal overlay for anime 3x3 image -->
     <div id="image-modal" class="modal">
         <span class="modal-close-button">X</span>
         <img class="modal-content" id="modal-image-content">
     </div>
 
-    <!-- Modal logic for image popup -->
     <script>
-        // Grab modal elements
         document.addEventListener("DOMContentLoaded", function() {
             const modal = document.getElementById("image-modal");
             const triggerImage = document.getElementById("anime-3x3-trigger");
             const modalImage = document.getElementById("modal-image-content");
             const closeButton = document.querySelector(".modal-close-button");
 
-            // Only add event listeners if everything is properly loaded
             if (modal && triggerImage && modalImage && closeButton) {
 
                 function openModal() {
@@ -193,18 +172,14 @@
                     modal.style.display = "none";
                 }
 
-                // Open modal when image is clicked
                 triggerImage.addEventListener("click", openModal);
-                // Close modal when close button is clicked
                 closeButton.addEventListener("click", closeModal);
-                // Close modal if background outside image is clicked (more intuitive)
                 modal.addEventListener("click", function(event) {
                     if (event.target === modal) {
                         closeModal();
                     }
                 });
             }
-
         });
     </script>
 </body>
